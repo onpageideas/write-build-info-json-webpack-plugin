@@ -1,0 +1,27 @@
+{
+  "name": "write-build-info-json-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Webpack plugin that generates a BUILD_INFO.json file with timestamp and other custom info after compilation is done",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "webpack",
+    "build info"
+  ],
+  "author": "Radu Cugut <rcugut@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.16.0"
+  },
+  "peerDependencies": {
+    "webpack": "4 || 5"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.0"
+  }
+}
