@@ -1,12 +1,9 @@
 {
   "name": "write-build-info-json-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Webpack plugin that generates a BUILD_INFO.json file with timestamp and other custom info after compilation is done",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/onpageideas/write-build-info-json-webpack-plugin.git"
-  },
+  "repository": "github:onpageideas/write-build-info-json-webpack-plugin",
   "homepage": "https://github.com/onpageideas/write-build-info-json-webpack-plugin",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

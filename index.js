@@ -31,12 +31,11 @@ export default class WriteBuildInfoJsonFilePlugin {
      * @param extraBuildProperties {Object} any other properties that will be written into the output file
      */
     constructor(buildTime, gitCommitSha, extraBuildProperties = {}) {
-        this.buildTime = buildTime;
-        this.gitCommitSha = gitCommitSha;
-        const dateTimeStr = buildTime.toISOString();
+        const buildTimeIsoStr = buildTime.toISOString();
+        const dateTimeStr = buildTime.toISOString().replace(/[^0-9]/g, '').substr(0, 14);
 
         this.buildProperties = Object.assign({}, extraBuildProperties, {
-            buildTime: dateTimeStr,
+            buildTime: buildTimeIsoStr,
             gitCommitSha: gitCommitSha,
             buildTag: `${gitCommitSha}@${dateTimeStr}`,
         });
