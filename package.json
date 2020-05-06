@@ -5,6 +5,9 @@
   "main": "index.js",
   "repository": "github:onpageideas/write-build-info-json-webpack-plugin",
   "homepage": "https://github.com/onpageideas/write-build-info-json-webpack-plugin",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
