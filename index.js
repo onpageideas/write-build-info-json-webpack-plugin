@@ -14,7 +14,7 @@ const _config = {
 
 
 
-export default class WriteBuildInfoJsonFilePlugin {
+class WriteBuildInfoJsonFilePlugin {
 
     /**
      * @param cfg {Object}
@@ -65,3 +65,5 @@ export default class WriteBuildInfoJsonFilePlugin {
     }
 }
 
+
+module.exports = WriteBuildInfoJsonFilePlugin;
